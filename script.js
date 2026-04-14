@@ -68,3 +68,21 @@ window.onclick = function (event) {
         });
     }
 }
+
+function abrirTrimestre(evento, idTrimestre) {
+    // 1. Esconde todos os conteúdos de trimestre
+    let conteudos = document.getElementsByClassName("aba-conteudo");
+    for (let i = 0; i < conteudos.length; i++) {
+        conteudos[i].style.display = "none";
+    }
+
+    // 2. Remove a classe "ativo" de todos os botões
+    let botoes = document.getElementsByClassName("aba-btn");
+    for (let i = 0; i < botoes.length; i++) {
+        botoes[i].className = botoes[i].className.replace(" ativo", "");
+    }
+
+    // 3. Mostra o trimestre clicado e marca o botão correspondente como ativo
+    document.getElementById(idTrimestre).style.display = "block";
+    evento.currentTarget.className += " ativo";
+}

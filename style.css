@@ -98,6 +98,152 @@ h2 {
     margin-top: 20px;
 }
 
+.capa-materia{
+    display: flex;
+    justify-content: center;
+}
+.capa-materia img {
+    max-width: 1000px;
+    height: 370px;
+    border-radius: 10px;
+}
+
+/* Container para as matérias/trimestre */
+.materia-secao {
+    padding: 40px 20px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.materia-secao h2 {
+    text-align: center;
+    color: #000000;
+    font-size: 36px;
+    margin-bottom: 30px;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.secao-header {
+    text-align: center;
+}
+
+/* Grid para os cartões de atividades */
+.grid-atividades {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+/* Cartão individual de atividade */
+.atividade-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.atividade-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.atividade-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.atividade-conteudo {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.atividade-conteudo h3 {
+    color: #000000; 
+    font-size: 22px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.atividade-conteudo p {
+    color: #000000;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    flex-grow: 1; 
+}
+
+/* Botão dentro do cartão */
+.btn-card {
+    align-self: flex-start;
+    padding: 10px 20px;
+    background-color: #26053d;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-card:hover {
+    background-color: #c298e2; /* COR ATUALIZADA */
+}
+
+/* =========================================
+   12. ABAS DE TRIMESTRES (Tabs)
+   ========================================= */
+.abas-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite quebrar linha no celular se necessário */
+    gap: 15px;
+    margin: -10px auto 30px;
+    padding: 0 20px;
+}
+
+.aba-btn {
+    background-color: #E2E8F0; 
+    color: #000000; 
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 30px; 
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.aba-btn:hover {
+    background-color: #c298e2;
+}
+
+/* Estado do botão quando estiver selecionado (ativo) */
+.aba-btn.ativo {
+    background-color: #551f7e; /* Índigo */
+    color: white;
+}
+
+/* Ocultar todas as abas por padrão (o JS e o HTML vão controlar) */
+.aba-conteudo {
+    display: none;
+    animation: fadeIn 0.5s ease; /* Efeito suave ao trocar de aba */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
 img {
     max-width: 100%;
     margin-top: 10px;
