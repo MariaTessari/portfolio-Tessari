@@ -41,10 +41,46 @@
     </div>
 
 
-    <section class="capa">
+    <div class="abas-container">
+        <button class="aba-btn ativo" onclick="abrirTrimestre(event, 'trimestre1')">1º Trimestre</button>
+        <button class="aba-btn" onclick="abrirTrimestre(event, 'trimestre2')">2º Trimestre</button>
+        <button class="aba-btn" onclick="abrirTrimestre(event, 'trimestre3')">3º Trimestre</button>
+    </div>
 
+    <div id="trimestre1" class="aba-conteudo" style="display: block;">
 
-    </section>
+        <section class="materia-secao bg-claro">
+            <div class="grid-atividades">
+                <div class="atividade-card">
+                    <h3>Atividade </h3>
+                    <img src="imagem/placeholder.jpg" alt="Atividade" class="atividade-img">
+                    <div class="atividade-conteudo">
+                        
+                        <p>Descrição da atividade de linguagens do primeiro trimestre.</p>
+                        <a href="#" class="btn-card">Ver Atividade</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="trimestre2" class="aba-conteudo">
+        <section class="materia-secao">
+            <div class="secao-header">
+                <h2>Em andamento</h2>
+            </div>
+            <p style="text-align: center; color: #000000;">Atividades do 2º Trimestre em breve...</p>
+        </section>
+        </div>
+
+    <div id="trimestre3" class="aba-conteudo">
+        <section class="materia-secao">
+            <div class="secao-header">
+                <h2>Em andamento</h2>
+            </div>
+            <p style="text-align: center; color: #000000;">Atividades do 3º Trimestre em breve...</p>
+        </section>
+    </div>
 
     <footer id="Contatos">
         <h3>Contatos</h3>

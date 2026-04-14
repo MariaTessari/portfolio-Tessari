@@ -98,10 +98,11 @@ h2 {
     margin-top: 20px;
 }
 
-.capa-materia{
+.capa-materia {
     display: flex;
     justify-content: center;
 }
+
 .capa-materia img {
     max-width: 1000px;
     height: 370px;
@@ -159,6 +160,16 @@ h2 {
     border-bottom: 1px solid #E2E8F0;
 }
 
+.analise-img {
+    width: 700px;
+    height: auto;
+    object-fit: cover;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    border-radius: 10px;
+}
+
 .atividade-conteudo {
     padding: 20px;
     flex-grow: 1;
@@ -167,7 +178,7 @@ h2 {
 }
 
 .atividade-conteudo h3 {
-    color: #000000; 
+    color: #000000;
     font-size: 22px;
     margin-top: 0;
     margin-bottom: 10px;
@@ -178,7 +189,12 @@ h2 {
     font-size: 15px;
     line-height: 1.5;
     margin-bottom: 20px;
-    flex-grow: 1; 
+    flex-grow: 1;
+}
+
+.atividade-card h2 {
+    font-size: x-large;
+    margin-top: 10px;
 }
 
 /* Botão dentro do cartão */
@@ -189,13 +205,15 @@ h2 {
     color: white;
     text-decoration: none;
     border-radius: 20px;
-    font-weight: 600;
+    font-weight: 580;
     font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     transition: background-color 0.3s ease;
 }
 
 .btn-card:hover {
-    background-color: #c298e2; /* COR ATUALIZADA */
+    background-color: #c298e2;
+    /* COR ATUALIZADA */
 }
 
 /* =========================================
@@ -204,23 +222,24 @@ h2 {
 .abas-container {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Permite quebrar linha no celular se necessário */
+    flex-wrap: wrap;
+    /* Permite quebrar linha no celular se necessário */
     gap: 15px;
     margin: -10px auto 30px;
     padding: 0 20px;
 }
 
 .aba-btn {
-    background-color: #E2E8F0; 
-    color: #000000; 
+    background-color: #E2E8F0;
+    color: #000000;
     border: none;
     padding: 12px 30px;
     font-size: 16px;
     font-weight: bold;
-    border-radius: 30px; 
+    border-radius: 30px;
     cursor: pointer;
     transition: all 0.3s ease;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .aba-btn:hover {
@@ -229,19 +248,28 @@ h2 {
 
 /* Estado do botão quando estiver selecionado (ativo) */
 .aba-btn.ativo {
-    background-color: #551f7e; /* Índigo */
+    background-color: #551f7e;
+    /* Índigo */
     color: white;
 }
 
 /* Ocultar todas as abas por padrão (o JS e o HTML vão controlar) */
 .aba-conteudo {
     display: none;
-    animation: fadeIn 0.5s ease; /* Efeito suave ao trocar de aba */
+    animation: fadeIn 0.5s ease;
+    /* Efeito suave ao trocar de aba */
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 img {
@@ -252,7 +280,7 @@ img {
 /* ==========================================================================
    4. COMPONENTES E SEÇÕES ESPECÍFICAS (CURRÍCULO, ANOS, ETC)
    ========================================================================== */
-.layout-sobre-mim{
+.layout-sobre-mim {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -380,12 +408,13 @@ img {
     transform: translateY(-8px);
     box-shadow: 0 12px 24px rgba(63, 69, 81, 0.3);
 }
+
 /* ==========================================================================
    5. Menu dropdown
    ========================================================================== */
-   .dropdown {
-        position: relative;
-        display: inline-block;
+.dropdown {
+    position: relative;
+    display: inline-block;
 }
 
 .dropdown .drseta {
@@ -399,7 +428,7 @@ img {
     position: absolute;
     background-color: #551f7e;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     border-radius: 4px;
     overflow: hidden;
@@ -432,7 +461,7 @@ img {
     position: absolute;
     background-color: #551f7e;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     border-radius: 4px;
     overflow: hidden;
@@ -464,7 +493,7 @@ img {
    5. BOTÕES E LINKS
    ========================================================================== */
 
-   .botao-inicio{
+.botao-inicio {
     align-items: center;
     justify-content: center;
     display: flex;
@@ -476,7 +505,7 @@ img {
     display: inline-block;
     margin-top: 15px;
     padding: 10px 20px;
-    background-color: #c298e2 ;
+    background-color: #c298e2;
     color: #26053d;
     text-decoration: none;
     border-radius: 4px;
@@ -494,7 +523,7 @@ img {
     display: inline-block;
     margin-top: 15px;
     padding: 10px 20px;
-    background-color: #551f7e ;
+    background-color: #551f7e;
     color: #ffffff;
     text-decoration: none;
     border-radius: 50px;
@@ -575,25 +604,25 @@ footer ul li a:hover {
     position: relative;
     height: 550px;
     width: 350px;
-    max-width: 1000px; 
-    margin: auto; 
+    max-width: 1000px;
+    margin: auto;
     overflow: hidden;
-    border-radius: 10px; 
-    box-shadow: 0 1px 10px rgba(0,0,0,0.2); 
+    border-radius: 10px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
 }
 
 
 .carrossel-slides {
     display: flex;
-    margin: 0; 
-    padding: 0; 
-    transition: transform 0.4s ease-in-out; 
-    width: 390px 
+    margin: 0;
+    padding: 0;
+    transition: transform 0.4s ease-in-out;
+    width: 390px
 }
 
 .slide {
     object-fit: cover;
-    transform: scale(1.08); 
+    transform: scale(1.08);
 }
 
 
@@ -604,18 +633,23 @@ footer ul li a:hover {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0); 
+    background-color: rgba(0, 0, 0, 0);
     color: white;
     border: none;
     padding: 15px;
     cursor: pointer;
     font-size: 24px;
     z-index: 10;
-    border-radius: 50%; 
+    border-radius: 50%;
 }
 
-.seta-esq { left: 10px; }
-.seta-dir { right: 10px; }
+.seta-esq {
+    left: 10px;
+}
+
+.seta-dir {
+    right: 10px;
+}
 
 
 
