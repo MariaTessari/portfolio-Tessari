@@ -1,14 +1,3 @@
-// const botaoTopo = document.getElementById("topo");
-
-// function voltaTopo() {
-//     window.scrollTo({
-//         top: 0,
-//         behavior: "smooth"
-//     });
-// }
-
-// botaoTopo.addEventListener("click", voltaTopo);
-
 // carrossel
 
 // Variável para guardar qual foto está aparecendo no momento
@@ -47,45 +36,35 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// dropdown
-/* Função para abrir e fechar o menu ao clicar em Matérias */
-function toggleMenu(event) {
+// --- DROPDOWN UNIFICADO ---
+
+/* Função inteligente que recebe o evento e o ID do menu a ser aberto */
+function toggleMenu(event, idDoMenu) {
     event.preventDefault(); /* Evita que a tela pule para o topo */
-    document.getElementById("dropdown-menu").classList.toggle("mostrar");
+
+    // (Opcional) Fecha outros menus abertos antes de abrir o novo
+    var todosMenus = document.querySelectorAll('.dropdown-conteudo, .dropdown-cont');
+    todosMenus.forEach(function(menu) {
+        if (menu.id !== idDoMenu) {
+            menu.classList.remove('mostrar');
+        }
+    });
+
+    // Abre ou fecha o menu específico que foi clicado
+    document.getElementById(idDoMenu).classList.toggle("mostrar");
 }
 
-/* Função extra: Fecha o menu se o usuário clicar em qualquer outro lugar da tela */
+/* Função única: Fecha os menus se o usuário clicar fora */
 window.onclick = function (event) {
-    if (!event.target.matches('.dropbtn') && !event.target.matches('.seta')) {
-        var dropdowns = document.getElementsByClassName("dropdown-conteudo");
-        for (var i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('mostrar')) {
-                openDropdown.classList.remove('mostrar');
+    // Verifica se onde o usuário clicou NÃO é um botão de menu ou a setinha
+    if (!event.target.matches('.dropbtn') && !event.target.matches('.dropbt') && !event.target.matches('.drseta')) {
+        
+        // Pega todos os menus suspensos e remove a classe 'mostrar'
+        var todosMenus = document.querySelectorAll(".dropdown-conteudo, .dropdown-cont");
+        todosMenus.forEach(function(menu) {
+            if (menu.classList.contains('mostrar')) {
+                menu.classList.remove('mostrar');
             }
-        }
+        });
     }
 }
-
-function toggleMenu(event) {
-    event.preventDefault(); /* Evita que a tela pule para o topo */
-    document.getElementById("dropdown-men").classList.toggle("mostrar");
-}
-
-/* Função extra: Fecha o menu se o usuário clicar em qualquer outro lugar da tela */
-window.onclick = function (event) {
-    if (!event.target.matches('.dropbt') && !event.target.matches('.seta')) {
-        var dropdowns = document.getElementsByClassName("dropdown-cont");
-        for (var i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('mostrar')) {
-                openDropdown.classList.remove('mostrar');
-            }
-        }
-    }
-}
-
-// trimestre
-
-
-

@@ -10,12 +10,12 @@
 
 <body>
 
-    <header class="nav-bar">
+     <header class="nav-bar">
         <a href="index.html"><img class="logo" src="Fotos/logo-port.png" alt="Minha_Logo"></a>
         <li class="topic">
-            <ul><a href="#">Início</a></ul>
+            <ul><a href="index.html">Início</a></ul>
             <ul class="dropdown">
-                <a href="#" class="dropbtn" onclick="toggleMenu(event)">Ensino Médio<span class="drseta">▼</span></a>
+                <a href="#" class="dropbtn" onclick="toggleMenu(event, 'dropdown-menu')">Ensino Médio<span class="drseta">▼</span></a>
                 <div class="dropdown-conteudo" id="dropdown-menu">
                     <a href="linguagens.html">Linguagens</a>
                     <a href="matematica.html">Matemática</a>
@@ -24,8 +24,8 @@
                 </div>
             </ul>
             <ul class="dropdown">
-                <a href="#" class="dropbtn" onclick="toggleMenu(event)">Técnico<span class="drseta">▼</span></a>
-                <div class="dropdown-conteudo" id="dropdown-menu">
+                <a href="#" class="dropbt" onclick="toggleMenu(event, 'dropdown-men')">Técnico<span class="drseta">▼</span></a>
+                <div class="dropdown-cont" id="dropdown-men">
                     <a href="modelagem.html">Modelagem de Sistemas</a>
                     <a href="iot.html">Internet das Coisas</a>
                     <a href="banco.html">Banco de Dados</a>
