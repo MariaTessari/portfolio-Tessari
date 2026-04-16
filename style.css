@@ -300,10 +300,11 @@ img {
     padding: 20px;
     flex: 1;
     text-align: justify;
+    margin-top: 3px;
 }
 
 .caixa-imagem {
-    width: 400px;
+    width: 500px;
     height: auto;
 }
 
@@ -318,6 +319,13 @@ img {
     padding-bottom: 20px;
 }
 
+.familia-img {
+    width: 700px;
+    height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
 
 
 .perfil {
@@ -607,8 +615,8 @@ footer ul li a:hover {
 
 #carrossel {
     position: relative;
-    height: 550px;
-    width: 350px;
+    height: 500px;
+    width: 450px;
     max-width: 1000px;
     margin: auto;
     overflow: hidden;
@@ -622,12 +630,14 @@ footer ul li a:hover {
     margin: 0;
     padding: 0;
     transition: transform 0.4s ease-in-out;
-    width: 390px
 }
 
 .slide {
-    object-fit: cover;
-    transform: scale(1.08);
+    min-width: 450px; /* Força a imagem a ter a largura exata do carrossel */
+    width: 450px;
+    height: 500px; /* Força a imagem a preencher a altura do carrossel */
+    object-fit: cover; /* Corta a imagem bonitinho sem achatar */
+    /* Remova o transform: scale(1.08); para evitar que a imagem vaze para o lado */
 }
 
 
