@@ -189,7 +189,9 @@ h2 {
     font-size: 15px;
     line-height: 1.5;
     margin-bottom: 20px;
-    flex-grow: 1;
+    display: flex;
+    margin: auto;
+    justify-content: center;
 }
 
 .atividade-card h2 {
@@ -209,6 +211,9 @@ h2 {
     font-size: 14px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     transition: background-color 0.3s ease;
+    margin: auto;
+    display: flex;
+    justify-content: center;
 }
 
 .btn-card:hover {
