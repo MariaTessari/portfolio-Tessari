@@ -10,12 +10,13 @@
 
 <body>
 
-   <header class="nav-bar">
+    <header class="nav-bar">
         <a href="index.html"><img class="logo" src="Fotos/logo-port.png" alt="Minha_Logo"></a>
         <li class="topic">
             <ul><a href="index.html">Início</a></ul>
             <ul class="dropdown">
-                <a href="#" class="dropbtn" onclick="toggleMenu(event, 'dropdown-menu')">Ensino Médio<span class="drseta">▼</span></a>
+                <a href="#" class="dropbtn" onclick="toggleMenu(event, 'dropdown-menu')">Ensino Médio<span
+                        class="drseta">▼</span></a>
                 <div class="dropdown-conteudo" id="dropdown-menu">
                     <a href="linguagens.html">Linguagens</a>
                     <a href="matematica.html">Matemática</a>
@@ -24,7 +25,8 @@
                 </div>
             </ul>
             <ul class="dropdown">
-                <a href="#" class="dropbt" onclick="toggleMenu(event, 'dropdown-men')">Técnico<span class="drseta">▼</span></a>
+                <a href="#" class="dropbt" onclick="toggleMenu(event, 'dropdown-men')">Técnico<span
+                        class="drseta">▼</span></a>
                 <div class="dropdown-cont" id="dropdown-men">
                     <a href="modelagem.html">Modelagem de Sistemas</a>
                     <a href="iot.html">Internet das Coisas</a>
@@ -40,7 +42,7 @@
         <img src="Fotos/matematica.png" alt="Capa de Matemática" class="atividades">
     </div>
 
-   <div class="abas-container">
+    <div class="abas-container">
         <button class="aba-btn ativo" onclick="abrirTrimestre(event, 'trimestre1')">1º Trimestre</button>
         <button class="aba-btn" onclick="abrirTrimestre(event, 'trimestre2')">2º Trimestre</button>
         <button class="aba-btn" onclick="abrirTrimestre(event, 'trimestre3')">3º Trimestre</button>
@@ -48,19 +50,42 @@
 
     <div id="trimestre1" class="aba-conteudo" style="display: block;">
 
-        <section class="materia-secao bg-claro">
+        <!-- <section class="materia-secao bg-claro"> -->
             <div class="grid-atividades">
                 <div class="atividade-card">
-                    <h3>Atividade </h3>
-                    <img src="imagem/placeholder.jpg" alt="Atividade" class="atividade-img">
-                    <div class="atividade-conteudo">
-                        
-                        <p>Descrição da atividade de linguagens do primeiro trimestre.</p>
-                        <a href="#" class="btn-card">Ver Atividade</a>
+                    <h2>Atividade do Filme: Quebrando a Banca</h2>
+
+                    <div class="conteudo-lado-a-lado">
+
+                        <a href="https://youtu.be/66sZjfvacSE?si=eIwcX4BeyotffKcq" target="_blank"
+                            rel="noopener noreferrer">
+                            <img src="Fotos/analise_1.png" alt="Atividade" class="analise-img">
+                        </a>
+
+                        <div class="atividade-conteudo">
+                            <div class="habilidades-descricao">
+                                <h4>Competências e Habilidades:</h4>
+                                <p><b>C5:</b> Aplicar o pensamento probabilístico para quantificar e fazer previsões em
+                                    situações aplicadas a diferentes áreas do conhecimento e da vida cotidiana;
+                                    <b>H31:</b> Reconhecer fenômenos e eventos (naturais, científicos, tecnológicos e/ou
+                                    sociais) de caráter aleatório, compreendendo o significado e a importância da
+                                    probabilidade como meio de prever resultados; <b>H32:</b> Identificar em
+                                    diferentes áreas científicas e outras atividades práticas modelos e problemas que
+                                    fazem uso de estatísticas e probabilidades.</p>
+
+                                <h4>Descrição:</h4>
+                                <p>Nesta atividade, tivemos que ler e fazer uma análise da obra mencionada sobre a
+                                    lente da antropologia. </p>
+
+                                <a href="https://youtu.be/66sZjfvacSE?si=eIwcX4BeyotffKcq" target="_blank"
+                                    rel="noopener noreferrer" class="btn-card">Ver Vídeo</a>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
-        </section>
+        <!-- </section> -->
     </div>
 
     <div id="trimestre2" class="aba-conteudo">
@@ -70,7 +95,7 @@
             </div>
             <p style="text-align: center; color: #000000;">Atividades do 2º Trimestre em breve...</p>
         </section>
-        </div>
+    </div>
 
     <div id="trimestre3" class="aba-conteudo">
         <section class="materia-secao">

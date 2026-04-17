@@ -11,11 +11,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const btnDir = document.getElementById('btn-dir');
     const totalSlides = slides.length;
 
-    // Função que faz o movimento
-    function atualizarCarrossel() {
-        const deslocamento = -(indiceAtual * 100);
-        slidesContainer.style.transform = `translateX(${deslocamento}%)`;
-    }
+   // Função que faz o movimento
+    function atualizarCarrossel() {
+        const deslocamento = -(indiceAtual * 450); // Move exatamente os 450px de largura da foto
+        slidesContainer.style.transform = `translateX(${deslocamento}px)`; // Mudamos de "%" para "px"
+    }
 
     // Ação ao clicar no botão da direita
     btnDir.addEventListener('click', () => {
